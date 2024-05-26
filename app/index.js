@@ -7,21 +7,16 @@ export default function App() {
 
   return (
     <>
-   <View>
-    <StartGameScreen/>
-    </View>
+        <View style={styles.rootScreen}>
+            <StartGameScreen/>
+        </View>
     </>
   );
 }
 
 const styles = StyleSheet.create({
-  appContainer: {
-    flex: 1,
-    paddingTop: 50,
-    paddingHorizontal: 16,
-    backgroundColor: "#1e085a"
-  },
-  goalsContainer: {
-    flex: 5
+  rootScreen: {
+    backgroundColor: '#ddb52f',
+    flex: 1
   }
 });
